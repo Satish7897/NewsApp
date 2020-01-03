@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:padding="10dp"
+        android:text="NEWS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:fontFamily="serif" />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:id="@+id/floating"
+     android:background="@drawable/pro"
+        android:scaleType="centerCrop"/>
+</RelativeLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="Refresh"
+    android:id="@+id/refreshButton"
+    android:textColor="@color/white"
+    android:background="@drawable/black_background"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
